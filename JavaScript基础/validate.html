@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function validate(){
+            account=document.loginForm.account.value;
+            password=document.loginForm.password.value;
+            if(account==""){
+                window.alert("账号不能为空");
+                document.loginForm.account.focus();
+                return ;
+            }else if(password==""){
+                window.alert("密码不能为空");
+                document.loginForm.password.focus();
+                return ;
+            }else{
+                document.loginForm.submit();
+            }
+        }
+
+    </script>
+    <form name="loginForm">
+        输入账号:<input name="account" type="text"><br>
+        输入密码:<input name="password" type="password"><br>
+        <input type="button" onclick="validate()" value="登陆">
+    </form>
+</body>
+</html>
