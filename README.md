@@ -17,5 +17,5 @@ Java Web程序设计学习
 
 ### 参考书籍
 
-![bookImage](https://github.com/Cl0udG0d/JavaWebStudy/blob/main/images/bookImage.png)
+《Java Web程序设计》微课视频版 -- 郭克华
 
