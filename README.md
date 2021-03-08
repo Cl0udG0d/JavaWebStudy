@@ -8,12 +8,14 @@ Java Web程序设计学习
 
 因为之前有`python`后端开发的基础，所以学起来没什么压力
 
-
-
 ### 更新时间
 
 + 2021.3.8 创建仓库 更新第三章 前端javascript基础 代码
 + 2021.3.8 更新第四章 jsp基本语法代码
 
 
+
+### 参考书籍
+
+![bookImage](https://github.com/Cl0udG0d/JavaWebStudy/blob/main/images/bookImage.png)
 
