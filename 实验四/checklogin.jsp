@@ -6,6 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="java.sql.*"%>
+<%@page import="javax.naming.*"%>
+<%@page import="javax.sql.*"%>
+<%@page import="java.sql.*"%>
 <html>
 <head>
     <title>Title</title>
@@ -13,9 +16,11 @@
 <body>
 
 <%
-    String mysqlUrl="jdbc:mysql://localhost/javaweb?user=root&password=root";
-    Class.forName("com.mysql.jdbc.Driver"); //加载驱动
-    Connection conn=DriverManager.getConnection(mysqlUrl);//链接数据库
+    Context ctx = new InitialContext();
+    //取得DataSource实例,()中为JNDI名称
+    DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/test");
+    //取得数据库连接
+    Connection conn = ds.getConnection();
 
 %>
 <%
